@@ -1,0 +1,51 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+/*make website deafult background */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body{
+  background-color: #0c0c1d;
+  color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;  /*inherit the colour of body tag - lightgray */
+}
+
+/*default end*/
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+/*defining a function for mobile sizes - make responsive*/
+
+@mixin mobile {
+  @media (max-width: 738px) {
+      @content;   
+  }
+}
+
+/*defining a function for tablet sizes - responsive*/
+@mixin tablet {
+  @media (max-width: 1024px) {
+      @content;       
+  }
+}
+
+/*define a function for dekstop sizes - responsive*/
+@mixin desktop {
+  @media (max-width: 1366px) {
+      @content;       
+  }
+}
