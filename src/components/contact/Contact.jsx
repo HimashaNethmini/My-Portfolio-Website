@@ -22,7 +22,7 @@ const variants = {
 
 const Contact = () => {
   const ref = useRef();
-  const formRef = useRef();  //emailjs fucntion configuration line
+  const formRef = useRef();   //emailjs fucntion configuration line
   const [error, setError] = useState(false); //error handling
   const [success, setSuccess] = useState(false);
 
