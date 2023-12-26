@@ -4,6 +4,7 @@ import { motion, useInView } from "framer-motion";
 import Footer from "../footer/Footer";
 import emailjs from "@emailjs/browser";
 
+//added animations
 const variants = {
   initial: {
     y: 500,
