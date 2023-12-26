@@ -1,0 +1,173 @@
+@import "../../app.scss";
+
+.services {
+  background: linear-gradient(180deg, #0c0c1d, #111122);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .textContainer {
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include mobile {
+      align-self: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 10px;
+      
+    }
+
+    p {
+      font-weight: 200;
+      font-size: 18px;
+      color: gray;
+      text-align: right;
+    }
+
+    hr {
+      width: 500px;
+      border: none;
+      border-top: 0.5px solid gray;
+
+      @include mobile {
+        width: 300px;
+      }
+    }
+  }
+
+  .titleContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+
+    @include mobile {
+      margin-top: -5rem;
+    }
+
+//main description 
+    .title1 {
+      text-align: justify;
+
+      @include mobile {
+        text-align: center;
+      }
+
+      p {
+        margin-left: 100px;
+        margin-right: 100px;
+
+        @include mobile {
+          display: none;
+        }
+      }
+
+      //new p for mobile view 
+      .title2{
+        display: none;
+
+        @include mobile{
+          display:contents;
+          line-height: 1.6;
+          
+        }
+      }
+    }
+
+    .type {
+      justify-content: left;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      margin-left: 1000px;
+
+      @include mobile {
+        margin-left: 1%;
+      }
+
+      button {
+        width: 250px;
+        height: 80px;
+        font-weight: bold;
+        border-radius: 50px;
+        background-color: orange;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+
+        @include mobile {
+          width: 150px;
+          height: 50px;
+          font-size: 18px;
+
+        }
+      }
+    }
+  }
+}
+
+.listContainer {
+  flex: 2;
+  display: flex;
+  max-width: 1366px;
+  margin: auto;
+
+  @include mobile {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .box {
+    padding: 50px;
+    border: 0.5px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include mobile {
+      border: none;
+      align-items: center;
+      gap: 8px;
+      padding: 10px;
+    }
+
+    p {
+      @include mobile {
+        display: none;   //remove paragraph in full stack n stuff
+      }
+    }
+
+    a {
+      padding: 5px;
+      padding-left: 35px;
+      margin-bottom: -1rem;
+      background-color: orange;
+      border: none;
+      cursor: pointer;
+      border-radius: 50px;
+      width: 100px;
+      height: 30px;
+      font-weight: bolder;
+      font-size: 1.20rem;
+      margin-left: 5rem;
+      color: black;
+
+      @include mobile {
+        background-color: transparent;
+        border: 1px solid orange;
+        border-radius: 5px;
+        color: orange;
+        width: 50%;
+        padding-left: 5rem;
+        margin-right: 5rem;
+
+      }
+    }
+  }
+
+}
