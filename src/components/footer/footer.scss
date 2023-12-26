@@ -1,0 +1,23 @@
+@import "../../app.scss";
+
+.footer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: auto;
+    align-items: center;
+}
+
+.text {
+    span {
+        margin-left: -1150px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+
+        @include mobile{
+            display: none;
+        }
+           
+    }
+
+}
