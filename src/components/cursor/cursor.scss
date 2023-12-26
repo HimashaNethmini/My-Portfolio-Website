@@ -1,0 +1,15 @@
+@import "../../app.scss";
+
+.cursor{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: fixed;
+    z-index: 999;
+
+    //remove the cursor component when using the phone cause we use fingers
+    @include mobile {
+        display: none;
+    }
+}
